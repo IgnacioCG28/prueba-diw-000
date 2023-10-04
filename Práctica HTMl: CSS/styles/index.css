@@ -1,0 +1,124 @@
+/*
+* Autor: Ignacio Carmona González
+* GitHub: https://github.com/IgnacioCG28/prueba-diw-000.git
+*/
+:root {
+  --white: #f2f2f2;
+  --black: #282828;
+}
+
+html {
+  font-size: 62.2%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /*10 px = 1 rem*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell;
+  background-color: var(--white);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  color: var(--white);
+  height: 20rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+nav {
+  margin: 2rem 0 3rem 0;
+}
+
+nav,
+a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--black);
+  padding: 1.5rem;
+}
+
+img{
+  width: 50rem;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  height: 10rem;
+  padding: 1rem;
+}
+
+p{
+  text-align: justify center;
+}
+
+input:focus{
+  color: blue;
+}
+
+.red-input:focus {
+  background: yellow;
+  color: red;
+}
+
+.border {
+  border-color: gray;
+  border-width: 0.2rem;
+  border-style: solid;
+  padding: 1rem;
+}
+
+.center-contend {
+  text-align: center;
+  align-items: center;
+}
+
+.far-text {
+  margin: 1.2rem;
+}
+
+.ejemplo1{
+background-color: orange;
+color: var(--black);
+}
+
+.justify{
+  text-align: justify;
+}
+/* Test*/
+figure.zoom {
+  background-position: 50% 50%;
+  position: relative;
+  margin: 100px auto;
+  border: 5px solid white;
+  box-shadow: -1px 5px 15px black;
+  height: 300px;
+  width: 500px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+figure.zoom img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+}
+figure.zoom img:hover {
+  opacity: 0;
+}
